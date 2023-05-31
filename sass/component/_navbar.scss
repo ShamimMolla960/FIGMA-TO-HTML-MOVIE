@@ -1,0 +1,30 @@
+/*Navbar Part Start*/ 
+@import "../variable/variable";
+#navbar{
+    padding-top: 20px;
+    background: transparent;
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    ul.navbar-nav{
+        li{margin-left: 30px;
+            a{
+                font-family: 'Poppins';
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 1.2;
+                letter-spacing: 0.15em;
+                color: $white;
+                transition: all linear .3s;
+                &:hover{
+                    color: $red;
+                }
+    
+            }
+        }
+    }
+}
+
+/*Navbar Part End*/ 
+

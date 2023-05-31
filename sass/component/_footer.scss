@@ -1,0 +1,131 @@
+/*Footer Part Start*/ 
+@import "../variable/variable";
+@import"../mixin/mixin";
+
+#footer{
+    padding: 20px 0;
+    background-color: $footer_clor;
+    .footer_btn{
+        padding-top: 20px;
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content:right;
+            li{
+                margin-left: 20px;
+                a{
+                    color: $white;
+                    border: 1px solid $white;
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 50%;
+                    text-align: center;
+                    &:hover{
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+    .item_1{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+        .text_item{
+            padding-left: 20px;
+            p{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: #E4E4E4;
+            }
+        }
+    }
+    .item_2{
+        padding-top: 20px;
+        h6{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 24px;
+            color: $white;
+            margin-left:31px;
+        }
+        li{
+            a{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 35px;
+                color: #E4E4E4;
+
+            }
+        }
+    }
+    .item_3{
+        padding-top: 20px;
+        h6{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 24px;
+            color: $white;
+            margin-left:31px;
+        }
+        li{
+            a{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 35px;
+                color: #E4E4E4;
+            }
+        }
+    }
+    .item_4{
+        padding-top: 20px;
+        h6{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 24px;
+            color: $white;
+            margin-left:31px;
+        }
+        li{
+            a{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 35px;
+                color: #E4E4E4;
+            }
+        }
+    }
+}
+#copyright{
+    background-color: #000;
+    padding: 10px 0;
+    p{
+        font-family: 'Jura';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: $white;
+        text-align: center;
+        span{
+            color:#FFAB34;;
+        }
+    }
+}
+
+/*Footer Part End*/ 

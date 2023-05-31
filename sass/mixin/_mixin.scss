@@ -1,0 +1,29 @@
+@import "../variable/variable";
+
+@mixin common-btn{
+                padding: 16px 20px;
+                background-color: $btn-color;
+                border-radius: 5px;
+                color: $white;
+                font-family:$inter;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 29px;
+                line-height: 112%;
+                letter-spacing: 0.15em;
+                color:$white;
+                transition: all linear .3s;
+                &:hover{
+                    color: $grey;
+                    background-color: $white;
+                }
+}
+@mixin paragraph($color, $font-family){
+                font-family:$font-family;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.15em;
+                color:$color;
+}

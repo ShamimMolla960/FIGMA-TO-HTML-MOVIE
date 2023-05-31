@@ -1,0 +1,144 @@
+/*Bannar Part Start*/ 
+@import"../variable/variable";
+@import "../mixin/mixin";
+
+#bannar{
+    background: url(../images/bannar.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .overlay{
+        padding-top:180px;
+        background: linear-gradient(82.06deg, rgba(1, 1, 1, 0.62) 49.77%, rgba(31, 169, 180, 0) 104.85%);
+        box-shadow: inset 0px 115px 83px rgba(0, 0, 0, 0.7);
+        .bannar_info{
+            h1{
+                font-family:$Kaushan;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 80px;
+                line-height: 1.2;
+                text-align: center;
+                letter-spacing: 0.15em;
+                color: $white;
+                span{
+                    display: block;
+                    font-size: 50px;
+                }
+            }
+            h4{
+                font-family:$inter;
+                font-style: normal;
+                font-weight: 800;
+                font-size: 20px;
+                line-height: 112%;
+                letter-spacing: 0.15em;
+                color: $white;
+                padding-top: 18px;
+            }
+            p{
+                @include paragraph($white, $inter);
+                padding-top:11px;
+            }
+            .bannar_btn{
+                display: flex;
+                align-items: center;
+                gap: 39px;
+                margin-bottom: 66px;
+                margin-top: 34px;
+                a{
+                    @include common-btn;
+                    svg{
+                        fill: $grey;
+                    }
+                }
+            }
+        }
+        .movie_slaider{
+            .slider_item{
+                margin: 0 10px;
+            }
+            .slider_item.slick-center{
+                .movie_overlay{
+                    opacity: 1 !important;
+                    visibility:visible !important;
+                }
+            }
+            .image{
+                position: relative;
+                img{
+                    width: 100%;
+                    height:100%;
+                    object-fit: cover;
+                }
+                .movie_overlay{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    background:rgba(22, 39, 65, 0.78);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    opacity:0;
+                    visibility: hidden;
+                    a{
+                        position: absolute;
+                        width: 90px;
+                        height: 90px;
+                        border-radius: 50%;
+                        border: 1px solid $white;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 50px;
+                        color:rgba(255, 255, 255, 0.611);
+                    }
+                }
+            }
+        }
+        
+    }
+}
+/*Bannar Part End*/
+
+/*Enertainment part Start*/ 
+#learn_more{
+    background-color: $bg_color;
+    padding: 122px 0;
+    .text_item{
+        h1{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 45px;
+            line-height: 1.2;
+            letter-spacing: 0.15em;
+            color: $white;
+        }
+        p{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.15em;
+            color: $white;
+            padding-top: 33px;
+            padding-bottom: 23px;
+            
+        }
+        .learn_btn{
+            a{
+                @include common-btn;
+            }
+        }
+    }
+    .image{
+        img{
+            border-radius: 20px;
+        }
+    }
+}
+/*Enertainment part End*/ 

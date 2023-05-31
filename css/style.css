@@ -1,0 +1,349 @@
+/*All Common CSS Start*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.img_fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+/*All Common CSS End*/
+/*Navbar Part Start*/
+#navbar {
+  padding-top: 20px;
+  background: transparent;
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#navbar ul.navbar-nav li {
+  margin-left: 30px;
+}
+#navbar ul.navbar-nav li a {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.15em;
+  color: #FFFFFF;
+  transition: all linear 0.3s;
+}
+#navbar ul.navbar-nav li a:hover {
+  color: red;
+}
+
+/*Navbar Part End*/
+/*Bannar Part Start*/
+#bannar {
+  background: url(../images/bannar.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#bannar .overlay {
+  padding-top: 180px;
+  background: linear-gradient(82.06deg, rgba(1, 1, 1, 0.62) 49.77%, rgba(31, 169, 180, 0) 104.85%);
+  box-shadow: inset 0px 115px 83px rgba(0, 0, 0, 0.7);
+}
+#bannar .overlay .bannar_info h1 {
+  font-family: "Kaushan Script", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.15em;
+  color: #FFFFFF;
+}
+#bannar .overlay .bannar_info h1 span {
+  display: block;
+  font-size: 50px;
+}
+#bannar .overlay .bannar_info h4 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 112%;
+  letter-spacing: 0.15em;
+  color: #FFFFFF;
+  padding-top: 18px;
+}
+#bannar .overlay .bannar_info p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15em;
+  color: #FFFFFF;
+  padding-top: 11px;
+}
+#bannar .overlay .bannar_info .bannar_btn {
+  display: flex;
+  align-items: center;
+  gap: 39px;
+  margin-bottom: 66px;
+  margin-top: 34px;
+}
+#bannar .overlay .bannar_info .bannar_btn a {
+  padding: 16px 20px;
+  background-color: #244B49;
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 29px;
+  line-height: 112%;
+  letter-spacing: 0.15em;
+  color: #FFFFFF;
+  transition: all linear 0.3s;
+}
+#bannar .overlay .bannar_info .bannar_btn a:hover {
+  color: #173157;
+  background-color: #FFFFFF;
+}
+#bannar .overlay .bannar_info .bannar_btn a svg {
+  fill: #173157;
+}
+#bannar .overlay .movie_slaider .slider_item {
+  margin: 0 10px;
+}
+#bannar .overlay .movie_slaider .slider_item.slick-center .movie_overlay {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+#bannar .overlay .movie_slaider .image {
+  position: relative;
+}
+#bannar .overlay .movie_slaider .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#bannar .overlay .movie_slaider .image .movie_overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(22, 39, 65, 0.78);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+}
+#bannar .overlay .movie_slaider .image .movie_overlay a {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 1px solid #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  color: rgba(255, 255, 255, 0.611);
+}
+
+/*Bannar Part End*/
+/*Enertainment part Start*/
+#learn_more {
+  background-color: #162741;
+  padding: 122px 0;
+}
+#learn_more .text_item h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 1.2;
+  letter-spacing: 0.15em;
+  color: #FFFFFF;
+}
+#learn_more .text_item p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15em;
+  color: #FFFFFF;
+  padding-top: 33px;
+  padding-bottom: 23px;
+}
+#learn_more .text_item .learn_btn a {
+  padding: 16px 20px;
+  background-color: #244B49;
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 29px;
+  line-height: 112%;
+  letter-spacing: 0.15em;
+  color: #FFFFFF;
+  transition: all linear 0.3s;
+}
+#learn_more .text_item .learn_btn a:hover {
+  color: #173157;
+  background-color: #FFFFFF;
+}
+#learn_more .image img {
+  border-radius: 20px;
+}
+
+/*Enertainment part End*/
+/*Footer Part Start*/
+#footer {
+  padding: 20px 0;
+  background-color: #101C2E;
+}
+#footer .footer_btn {
+  padding-top: 20px;
+}
+#footer .footer_btn ul {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+#footer .footer_btn ul li {
+  margin-left: 20px;
+}
+#footer .footer_btn ul li a {
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+}
+#footer .footer_btn ul li a:hover {
+  color: red;
+}
+#footer .item_1 {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+#footer .item_1 .text_item {
+  padding-left: 20px;
+}
+#footer .item_1 .text_item p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #E4E4E4;
+}
+#footer .item_2 {
+  padding-top: 20px;
+}
+#footer .item_2 h6 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin-left: 31px;
+}
+#footer .item_2 li a {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 35px;
+  color: #E4E4E4;
+}
+#footer .item_3 {
+  padding-top: 20px;
+}
+#footer .item_3 h6 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin-left: 31px;
+}
+#footer .item_3 li a {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 35px;
+  color: #E4E4E4;
+}
+#footer .item_4 {
+  padding-top: 20px;
+}
+#footer .item_4 h6 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin-left: 31px;
+}
+#footer .item_4 li a {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 35px;
+  color: #E4E4E4;
+}
+
+#copyright {
+  background-color: #000;
+  padding: 10px 0;
+}
+#copyright p {
+  font-family: "Jura";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  text-align: center;
+}
+#copyright p span {
+  color: #FFAB34;
+}
+
+/*Footer Part End*//*# sourceMappingURL=style.css.map */
